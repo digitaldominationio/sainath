@@ -39,7 +39,7 @@ export default function EducationAndTraining() {
             className="flex justify-center"
           >
             <img
-              src="/EducationandTraining/8.png"
+              src="/education.jpg"
               className="w-full max-w-lg rounded-2xl shadow-lg object-cover"
               alt="Education Training"
             />
@@ -64,7 +64,7 @@ export default function EducationAndTraining() {
 
           {/* Decorative image (your own existing image) */}
           <img
-            src="/EducationandTraining/7.png"
+            src="/105.png"
             className="absolute right-6 top-6 w-40 opacity-25 rounded-xl"
             alt="Decorative"
           />

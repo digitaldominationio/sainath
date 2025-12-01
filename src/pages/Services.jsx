@@ -14,7 +14,7 @@ const SERVICES = [
       "Run plastic-free and waste management awareness campaigns.",
       "Work with schools & villages for long-term tree care and biodiversity."
     ],
-    img: "/Finance/bank1.jpg"
+    img: "/plantation.jpg"
   },
   {
     key: "old-age",
@@ -25,7 +25,7 @@ const SERVICES = [
       "Home-care visits, food kits, and mobility aids distribution.",
       "Counselling and social inclusion programs to reduce isolation."
     ],
-    img: "/Finance/youth1.jpg"
+    img: "/oldage.jpg"
   },
   {
     key: "child-welfare",
@@ -36,7 +36,7 @@ const SERVICES = [
       "Provide school material, tuition support and mentorship.",
       "Child protection programs, counseling and recreational activities."
     ],
-    img: "/Finance/govt1.jpg"
+    img: "/childwelfare.jpg"
   },
   {
     key: "disaster-relief",
@@ -47,7 +47,7 @@ const SERVICES = [
       "Coordinate with local authorities for rescue and relief.",
       "Long-term rehabilitation and reconstruction support."
     ],
-    img: "/Finance/collab1.jpg"
+    img: "/floodrelief.jpg"
   },
   {
     key: "rehabilitation",
@@ -58,7 +58,7 @@ const SERVICES = [
       "Provide counselling and social reintegration programs.",
       "Coordinate housing and legal aid where required."
     ],
-    img: "/Finance/banner1.png"
+    img: "/rehabilitation.jpg"
   },
   {
     key: "women-empowerment",
@@ -69,7 +69,7 @@ const SERVICES = [
       "Support SHG formation and market linkages.",
       "Financial literacy and small-business seed support."
     ],
-    img: "/Finance/bank1.jpg"
+    img: "/womenempowerment.jpg"
   },
   {
     key: "animal-welfare",
@@ -80,7 +80,7 @@ const SERVICES = [
       "Vaccination drives and community awareness on animal care.",
       "Partner with vets and shelters for long-term rehabilitation."
     ],
-    img: "/Finance/collab1.jpg"
+    img: "/animalwelfare.jpg"
   },
   {
     key: "health-camps",
@@ -91,7 +91,7 @@ const SERVICES = [
       "Eye checkups, dental camps and maternal-child health programs.",
       "Create referral linkages to hospitals and diagnostics."
     ],
-    img: "/Finance/govt1.jpg"
+    img: "/healthcamps.jpg"
   },
   {
     key: "community-dev",
@@ -102,7 +102,7 @@ const SERVICES = [
       "Support community-driven projects (micro-irrigation, storage, etc.).",
       "Promote participatory planning and local governance capacity."
     ],
-    img: "/Finance/bank1.jpg"
+    img: "/communitydevelopment.jpg"
   },
   {
     key: "env-protection",
@@ -113,7 +113,7 @@ const SERVICES = [
       "Promote sustainable & regenerative agriculture practices.",
       "Teach composting, soil health and water-conservation techniques."
     ],
-    img: "/Finance/banner1.png"
+    img: "/environmentalprotection.jpg"
   },
   {
     key: "food-dist",
@@ -124,7 +124,7 @@ const SERVICES = [
       "Provide ration kits to households during crises.",
       "Coordinate seasonal food programs (festivals, harvest lean periods)."
     ],
-    img: "/Finance/collab1.jpg"
+    img: "/fooddistribution.jpg"
   },
   {
     key: "skill-training",
@@ -135,7 +135,7 @@ const SERVICES = [
       "Link youth to internships, apprenticeships and local jobs.",
       "Support micro-entrepreneurship and startup mentorship."
     ],
-    img: "/Finance/youth1.jpg"
+    img: "/skilldevelopment.jpg"
   },
 ];
 
@@ -164,7 +164,7 @@ export default function NGO() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="flex justify-center">
-            <img src="/Finance/banner1.png" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
+            <img src="/education.jpg" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
           </motion.div>
         </div>
       </section>

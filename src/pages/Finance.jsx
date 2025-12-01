@@ -168,7 +168,7 @@ export default function Finance() {
           </div>
 
           <img
-            src="/Finance/bank1.jpg"
+            src="/bank.jpg"
             className="w-full rounded-2xl shadow-lg object-cover"
             alt="Banking Support"
           />
@@ -185,7 +185,7 @@ export default function Finance() {
         <div className="grid md:grid-cols-2 gap-10">
 
           <img
-            src="/Finance/govt1.jpg"
+            src="/scheme.jpg"
             className="w-full rounded-2xl shadow-lg object-cover"
             alt="Government Schemes"
           />
@@ -235,7 +235,7 @@ export default function Finance() {
           </div>
 
           <img
-            src="/Finance/collab1.jpg"
+            src="/collaboration.jpg"
             className="w-full rounded-2xl shadow-lg object-cover"
             alt="Collaborations"
           />
@@ -253,7 +253,7 @@ export default function Finance() {
         <div className="grid md:grid-cols-2 gap-10">
 
           <img
-            src="/Finance/youth1.jpg"
+            src="/skilldevelopment.jpg"
             className="w-full rounded-2xl shadow-lg object-cover"
             alt="Youth Development"
           />
