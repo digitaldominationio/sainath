@@ -1,0 +1,30 @@
+
+@import "tailwindcss";
+
+/* Global Reset */
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth animations */
+* {
+  transition: all .2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+

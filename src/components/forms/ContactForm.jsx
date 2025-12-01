@@ -1,0 +1,72 @@
+import { useState } from "react";
+import Button from "../common/Button";
+
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Form Submitted →", formData);
+
+    alert("Thank you! We have received your message.");
+
+    setFormData({ name: "", email: "", message: "" });
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="p-8 rounded-xl shadow bg-white space-y-5"
+    >
+      <div>
+        <label className="font-medium">Name</label>
+        <input
+          type="text"
+          name="name"
+          required
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full p-3 border rounded-lg mt-1 focus:outline-teal-600"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div>
+        <label className="font-medium">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full p-3 border rounded-lg mt-1 focus:outline-teal-600"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div>
+        <label className="font-medium">Message</label>
+        <textarea
+          name="message"
+          required
+          rows="5"
+          value={formData.message}
+          onChange={handleChange}
+          className="w-full p-3 border rounded-lg mt-1 focus:outline-teal-600"
+          placeholder="Write your message..."
+        ></textarea>
+      </div>
+
+      <Button text="Send Message" />
+    </form>
+  );
+}
