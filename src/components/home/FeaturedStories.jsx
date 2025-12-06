@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function FeaturedStories() {
   const stories = [
@@ -58,6 +59,7 @@ export default function FeaturedStories() {
       }
     }
   };
+  const navigate = useNavigate();
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white px-6">
@@ -124,7 +126,7 @@ export default function FeaturedStories() {
                     {story.impact}
                   </span>
                   <motion.button
-                    whileHover={{ x: 5 }}
+                    whileHover={{ x: 5 }}                    
                     className="
                       text-teal-600 font-medium text-sm 
                       flex items-center gap-1 group
@@ -151,6 +153,10 @@ export default function FeaturedStories() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate('/gallery')
+              }}
             className="
               px-8 py-4 rounded-full bg-teal-600 text-white 
               font-semibold shadow-lg hover:shadow-xl

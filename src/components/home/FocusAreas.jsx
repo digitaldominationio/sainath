@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function FocusAreas() {
   const areas = [
@@ -54,6 +55,7 @@ export default function FocusAreas() {
       },
     },
   };
+  const navigate = useNavigate();
 
   const cardAnim = {
     hidden: { 
@@ -181,6 +183,10 @@ export default function FocusAreas() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate('/services/education-training')
+              }}
               className="mt-6 px-8 py-3 rounded-full bg-teal-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               Explore All Programs

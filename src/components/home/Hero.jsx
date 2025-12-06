@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
   const buttonVariants = {
@@ -7,6 +8,7 @@ export default function Hero() {
     hover: { scale: 1.05, transition: { type: "spring", stiffness: 400 } },
     tap: { scale: 0.95 }
   };
+  const navigate = useNavigate();
 
   return (
 <section
@@ -19,7 +21,7 @@ export default function Hero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/101.png')",
+          backgroundImage: "url('/Hero1.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -81,6 +83,7 @@ export default function Hero() {
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
+            onClick={() => navigate("/contact")}
             className="px-8 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600"
           >
             Get Involved →
@@ -90,6 +93,7 @@ export default function Hero() {
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
+            onClick={() => navigate("/donate")}
             className="px-8 py-3 bg-white/20 backdrop-blur-sm border border-white/40 text-white font-semibold rounded-lg hover:bg-white/30"
           >
             Donate Now ❤️

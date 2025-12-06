@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function CTASection() {
   const containerVariants = {
@@ -26,6 +27,7 @@ export default function CTASection() {
       }
     }
   };
+  const navigate = useNavigate();
 
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -127,6 +129,10 @@ export default function CTASection() {
           >
             <motion.button
               variants={buttonVariants}
+              onClick={() =>{
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate('/contact')
+              }}
               whileHover="hover"
               whileTap="tap"
               className="
@@ -149,6 +155,10 @@ export default function CTASection() {
 
             <motion.button
               variants={buttonVariants}
+              onClick={() =>{
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate('/donate')
+              }}
               whileHover="hover"
               whileTap="tap"
               className="
@@ -171,6 +181,10 @@ export default function CTASection() {
 
             <motion.button
               variants={buttonVariants}
+              onClick={() =>{
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate('/contact')
+              }}
               whileHover="hover"
               whileTap="tap"
               className="

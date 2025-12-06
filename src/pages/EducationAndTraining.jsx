@@ -116,13 +116,10 @@ export default function EducationAndTraining() {
             title="Industry-Specific Skill Modules"
             description="Job-oriented training for Retail, Banking, ITES, BPO, Hospitality and more with practical exposure."
           />
-        </div>
-
-        <div className="text-center mt-12">
-          <img
-            src="/EducationandTraining/2.jpeg"
-            className="w-72 mx-auto rounded-2xl shadow-lg"
-            alt="Skill Growth"
+          <ServiceCard
+            image="/EducationandTraining/2.jpeg"
+            title="Skill Growth Workshops"
+            description="Short-term workshops focused on enhancing specific skills like MS Office, Digital Literacy, etc."
           />
         </div>
       </section>
