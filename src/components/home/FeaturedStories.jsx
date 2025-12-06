@@ -8,21 +8,24 @@ export default function FeaturedStories() {
       description: "Empowered 500+ students with computer education in remote villages of Odisha.",
       image: "/stories/1.jpg",
       impact: "85% improved digital skills",
-      category: "Education"
+      category: "Education",
+      link: "/gallery"
     },
     {
       title: "Sustainable Farming Revolution",
       description: "Trained 200+ farmers in organic farming techniques, increasing yield by 40%.",
       image: "/stories/2.jpg",
       impact: "200+ families benefited",
-      category: "Agriculture"
+      category: "Agriculture",
+      link: "/gallery"
     },
     {
       title: "Healthcare Camps Initiative",
       description: "Provided free medical checkups and treatment to 1000+ underserved community members.",
       image: "/stories/3.jpg",
       impact: "1000+ lives touched",
-      category: "Healthcare"
+      category: "Healthcare",
+      link: "/gallery"
     }
   ];
 
@@ -90,6 +93,10 @@ export default function FeaturedStories() {
               key={index}
               variants={cardVariants}
               whileHover="hover"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate(story.link);
+              }}
               className="
                 bg-white rounded-2xl shadow-lg hover:shadow-2xl 
                 border border-gray-100 overflow-hidden

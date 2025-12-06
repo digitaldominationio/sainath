@@ -4,25 +4,21 @@ import logo from "../../assets/images/logo3.png";
 import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false); // mobile menu
-  const [openServices, setOpenServices] = useState(false); // services dropdown
+  const [open, setOpen] = useState(false);
+  const [openServices, setOpenServices] = useState(false);
   const servicesRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Scroll to top on navigation
   const handleNavigation = (path) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate(path);
   };
 
-  // Main nav links
+  // Updated navigation order (Services placed after About)
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Contact", path: "/contact" },
-    { name: "Donate", path: "/donate" },
   ];
 
   const serviceLinks = [
@@ -31,7 +27,12 @@ export default function Navbar() {
     { name: "Education & Training", path: "/services/education-training" },
   ];
 
-  // Close dropdown when clicking outside
+  const otherLinks = [
+    { name: "Gallery", path: "/gallery" },
+    { name: "Contact", path: "/contact" },
+    { name: "Donate", path: "/donate" },
+  ];
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (servicesRef.current && !servicesRef.current.contains(event.target)) {
@@ -42,7 +43,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close menus on route change
   useEffect(() => {
     setOpen(false);
     setOpenServices(false);
@@ -63,6 +63,8 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 font-medium items-center">
+
+        {/* Home & About */}
         {navLinks.map((link) => (
           <li key={link.name}>
             <button
@@ -74,7 +76,7 @@ export default function Navbar() {
           </li>
         ))}
 
-        {/* SERVICES DROPDOWN */}
+        {/* SERVICES DROPDOWN NEXT TO ABOUT */}
         <li className="relative" ref={servicesRef}>
           <button
             onClick={() => setOpenServices(!openServices)}
@@ -104,6 +106,19 @@ export default function Navbar() {
             </ul>
           )}
         </li>
+
+        {/* Remaining Links */}
+        {otherLinks.map((link) => (
+          <li key={link.name}>
+            <button
+              onClick={() => handleNavigation(link.path)}
+              className="hover:text-teal-600 pb-1"
+            >
+              {link.name}
+            </button>
+          </li>
+        ))}
+
       </ul>
 
       {/* Mobile Menu Button */}
@@ -115,6 +130,7 @@ export default function Navbar() {
       {open && (
         <ul className="absolute top-16 left-0 w-full bg-white shadow p-5 space-y-4 font-medium md:hidden z-50">
 
+          {/* Home & About */}
           {navLinks.map((link) => (
             <li key={link.name}>
               <button
@@ -156,6 +172,19 @@ export default function Navbar() {
               </ul>
             )}
           </li>
+
+          {/* Remaining Links */}
+          {otherLinks.map((link) => (
+            <li key={link.name}>
+              <button
+                onClick={() => handleNavigation(link.path)}
+                className="block py-2 hover:text-teal-600 w-full text-left"
+              >
+                {link.name}
+              </button>
+            </li>
+          ))}
+
         </ul>
       )}
     </nav>

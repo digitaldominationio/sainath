@@ -8,42 +8,49 @@ export default function FocusAreas() {
       text: "Comprehensive education programs and digital skills training for youth and adults in underserved communities.",
       icon: "🎓",
       color: "from-blue-500 to-cyan-500",
-      stats: "2000+ Students Trained"
+      stats: "2000+ Students Trained",
+      link: "/services/education-training"
     },
     {
       title: "Sustainable Agriculture",
       text: "Modern farming techniques, organic practices, and market access support for small-scale farmers.",
       icon: "🌾",
       color: "from-green-500 to-emerald-500",
-      stats: "500+ Farmers Empowered"
+      stats: "500+ Farmers Empowered",
+      link: "/services/ngo"
     },
     {
       title: "Child Welfare & Nutrition",
       text: "Holistic child development programs focusing on education, healthcare, nutrition, and safe environments.",
       icon: "👶",
       color: "from-pink-500 to-rose-500",
-      stats: "1000+ Children Supported"
+      stats: "1000+ Children Supported",
+      link: "/services/ngo"
+
     },
     {
       title: "Healthcare Access",
       text: "Medical camps, health awareness campaigns, and healthcare infrastructure development in rural areas.",
       icon: "🏥",
       color: "from-red-500 to-orange-500",
-      stats: "50+ Medical Camps"
+      stats: "50+ Medical Camps",
+      link: "/services/ngo"
     },
     {
       title: "Environmental Sustainability",
       text: "Afforestation, waste management, and climate resilience programs for greener communities.",
       icon: "🌳",
       color: "from-emerald-500 to-teal-500",
-      stats: "10,000+ Trees Planted"
+      stats: "10,000+ Trees Planted",
+      link: "/services/ngo"
     },
     {
       title: "Women Empowerment",
       text: "Skill development, entrepreneurship training, and leadership programs for women and girls.",
       icon: "💪",
       color: "from-purple-500 to-pink-500",
-      stats: "300+ Women Trained"
+      stats: "300+ Women Trained",
+      link: "/services/ngo"
     }
   ];
 
@@ -112,6 +119,10 @@ export default function FocusAreas() {
                 y: -8, 
                 scale: 1.02,
                 transition: { type: "spring", stiffness: 300 }
+              }}
+              onClick={()=> 
+                {window.scrollTo({ top: 0, behavior: "smooth" })
+                navigate(item.link)
               }}
               className="
                 group relative bg-white rounded-2xl p-8 
