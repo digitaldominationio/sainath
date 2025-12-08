@@ -13,6 +13,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import Message from "../pages/Message";
 import TermsConditions from "../pages/TermsConditions";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 export default function AppRouter() {
   return (
@@ -32,6 +33,7 @@ export default function AppRouter() {
           <Route path="/services/education-training" element={<EducationAndTraining />} />
           <Route path ="/message" element={ <Message/> } />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
+          <Route path ="/privacy-policy" element={ <PrivacyPolicy/> } />
           
           {/* Fallback route */}
           <Route path="*" element={<h1 className="text-center py-20 text-2xl">404 - Page Not Found</h1>} />

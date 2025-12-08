@@ -35,7 +35,7 @@ export default function Donate() {
               onClick={() => setPreviewImage("/pan.jpg")}
             >
               <img
-                src="/pan.jpg"
+                src="/pancard.jpeg"
                 alt="PAN Card"
                 className="w-full h-40 object-contain hover:scale-105 transition-transform"
               />
@@ -48,7 +48,7 @@ export default function Donate() {
               onClick={() => setPreviewImage("/aadhar.jpg")}
             >
               <img
-                src="/aadhar.jpg"
+                src="/aadhar.jpeg"
                 alt="Aadhar Card"
                 className="w-full h-40 object-contain hover:scale-105 transition-transform"
               />

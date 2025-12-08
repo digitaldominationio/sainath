@@ -47,12 +47,13 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
-            {["About Us", "Gallery", "Donate", "Terms and Condition"].map((item, index) => {
+            {["About Us", "Gallery", "Donate", "Terms and Condition" , "Privacy Policy"].map((item, index) => {
               const paths = {
                 "About Us": "/about",
                  "Terms and Condition": "/terms-and-conditions",
                 "Gallery": "/gallery",
-                "Donate": "/donate"
+                "Donate": "/donate",
+                "Privacy Policy": "/privacy-policy"
               };
 
               return (
