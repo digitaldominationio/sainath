@@ -21,7 +21,7 @@ export default function EducationAndTraining() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              At <span className="font-semibold text-teal-700">Placement Odisha Skill Academy</span>, 
+              At <span className="font-semibold text-teal-700">PlacementOdisha Skill Academy</span>, 
               we empower students, youth, and professionals with structured, industry-aligned, 
               and skill-based training programs designed to build strong careers and brighter futures.
             </p>
@@ -51,7 +51,7 @@ export default function EducationAndTraining() {
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="bg-white rounded-2xl shadow p-10 border border-gray-200 relative">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Why Choose Placement Odisha Skill Academy?
+            Why Choose PlacementOdisha Skill Academy?
           </h2>
 
           <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -158,7 +158,7 @@ export default function EducationAndTraining() {
           Enabling Talent, Empowering Futures
         </h2>
         <p className="text-gray-600 mt-4">
-          Placement Odisha Skill Academy is committed to creating opportunities
+          PlacementOdisha Skill Academy is committed to creating opportunities
           for every learner to grow, succeed and build a better tomorrow.
         </p>
       </section>

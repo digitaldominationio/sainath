@@ -29,7 +29,7 @@ export default function Hero() {
       ></div>
 
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
 
       {/* --- CONTENT --- */}
       <div className="relative z-10 text-center max-w-4xl mx-auto">
@@ -84,7 +84,7 @@ export default function Hero() {
             whileHover="hover"
             whileTap="tap"
             onClick={() => navigate("/contact")}
-            className="px-8 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600"
+            className="px-8 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 cursor-pointer"
           >
             Get Involved →
           </motion.button>
@@ -94,7 +94,7 @@ export default function Hero() {
             whileHover="hover"
             whileTap="tap"
             onClick={() => navigate("/donate")}
-            className="px-8 py-3 bg-white/20 backdrop-blur-sm border border-white/40 text-white font-semibold rounded-lg hover:bg-white/30"
+            className="px-8 py-3 bg-white/20 backdrop-blur-sm border border-white/40 text-white font-semibold rounded-lg hover:bg-white/30 cursor-pointer"
           >
             Donate Now ❤️
           </motion.button>

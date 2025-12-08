@@ -104,7 +104,7 @@ export default function About() {
           {[
             {
               title: "Our Mission",
-              text: "Over the past 11 years, we have expanded into consulting, training, recruitment, and government skill development projects such as Skill India, NAPS, MSME, and Startup India. We believe talent is not born—it is created through training and opportunity.",
+              text: "Over the past 13 years, we have expanded into consulting, training, recruitment, and government skill development projects such as Skill India, NAPS, MSME, and Startup India. We believe talent is not born—it is created through training and opportunity.",
             },
             {
               title: "Our Vision",

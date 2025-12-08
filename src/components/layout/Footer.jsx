@@ -9,7 +9,7 @@ const scrollTop = () => {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-300 pt-20 pb-10 mt-20 relative overflow-hidden">
+    <footer className="bg-gray-950 text-gray-300 pt-20 pb-10  relative overflow-hidden">
 
       {/* Soft Glow Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-teal-700/10 via-cyan-600/5 to-transparent blur-3xl"></div>

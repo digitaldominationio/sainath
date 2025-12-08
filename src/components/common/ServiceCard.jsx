@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ServiceCard({ image, title, description }) {
   return (
@@ -26,9 +27,9 @@ export default function ServiceCard({ image, title, description }) {
           {description}
         </p>
 
-        <button className="bg-teal-600 text-white px-6 py-2 rounded-lg shadow hover:bg-teal-700 hover:shadow-lg transition duration-300 w-fit">
+        <Link to="/contact" className="bg-teal-600 text-white px-6 py-2 rounded-lg shadow hover:bg-teal-700 hover:shadow-lg transition duration-300 w-fit">
           Learn More
-        </button>
+        </Link>
       </div>
     </div>
   );
