@@ -83,10 +83,10 @@ export default function Footer() {
 
           <div className="space-y-3 text-gray-400">
             <p className="flex items-center gap-2">
-              <MapPin size={18} className="text-teal-300" /> Odisha, India
+              <MapPin size={18} className="text-teal-300" /> Redika Street, Lanjipalli, Brahmapur, Odisha, India
             </p>
             <p className="flex items-center gap-2">
-              <Phone size={18} className="text-teal-300" /> +91 9876543210
+              <Phone size={18} className="text-teal-300" /> +91 9338311234
             </p>
             <p className="flex items-center gap-2">
               <Mail size={18} className="text-teal-300" /> info@sainathtrust.org

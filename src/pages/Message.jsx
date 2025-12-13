@@ -15,7 +15,7 @@ const Message = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img
-            src={"/101.png"}
+            src={"/about/Chairman.jpeg"}
             alt="Chairman"
             className="w-56 h-56 md:w-64 md:h-64 rounded-xl object-cover shadow-lg"
           />

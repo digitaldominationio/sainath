@@ -3,12 +3,18 @@ import SectionTitle from "../components/common/SectionTitle";
 
 export default function Gallery() {
   const images = [
-    { src: "/gallery/1.jpg", alt: "Community event 1" },
-    { src: "/gallery/2.jpg", alt: "Community event 2" },
-    { src: "/gallery/3.jpg", alt: "Training session" },
-    { src: "/gallery/4.jpg", alt: "Plantation drive" },
-    { src: "/gallery/5.jpg", alt: "Medical camp" },
-    { src: "/gallery/6.jpg", alt: "Volunteer group" },
+    { src: "/gallery/1.jpeg", alt: "Social event" },
+    { src: "/gallery/2.jpeg", alt: "Social event" },
+    { src: "/gallery/13.jpeg", alt: "Social Event" },
+    { src: "/gallery/14.jpeg", alt: "Volunteer group" },
+    { src: "/gallery/15.jpeg", alt: "Charity Work" },
+    { src: "/gallery/16.jpeg", alt: "Volunteer group" },
+    { src: "/gallery/7.jpeg", alt: "Volunteer group" },
+    { src: "/gallery/8.jpeg", alt: "Community Event" },
+    { src: "/gallery/9.jpg", alt: "Community Event" },
+    { src: "/gallery/10.jpeg", alt: "Placement Drive" },
+    { src: "/gallery/17.jpeg", alt: "Community Event" },
+    { src: "/gallery/18.jpeg", alt: "Humanitarian Work" },
   ];
 
   const [selected, setSelected] = useState(null);
