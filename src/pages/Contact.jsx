@@ -27,22 +27,23 @@ export default function Contact() {
               <p>
                 <span className="font-semibold">📍 Address:</span><br />
                 Sainath Educational & Charitable Trust,<br />
+                Redika Street, Lanjipalli, Brahmapur,<br />
                 Odisha, India.
               </p>
 
               <p>
                 <span className="font-semibold">📞 Phone:</span><br />
-                +91 9876543210
+                +91 9338311234<br />
               </p>
 
               <p>
                 <span className="font-semibold">📧 Email:</span><br />
-                info@sainathtrust.org
+                contactsainathedu@gmail.com
               </p>
 
               <p>
                 <span className="font-semibold">🌐 Website:</span><br />
-                www.sainathtrust.org
+                www.sainathtechno.co.in
               </p>
             </div>
           </div>

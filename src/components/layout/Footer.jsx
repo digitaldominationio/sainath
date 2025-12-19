@@ -89,7 +89,7 @@ export default function Footer() {
               <Phone size={18} className="text-teal-300" /> +91 9338311234
             </p>
             <p className="flex items-center gap-2">
-              <Mail size={18} className="text-teal-300" /> info@sainathtrust.org
+              <Mail size={18} className="text-teal-300" /> contact.sainathedu@gmail.com
             </p>
           </div>
         </div>

@@ -240,7 +240,7 @@ export default function NGO() {
           <a href="/donate" className="px-6 py-3 rounded-full bg-teal-700 text-white font-semibold shadow hover:bg-teal-800 transition">
             Donate Now
           </a>
-          <a href="/volunteer" className="px-6 py-3 rounded-full border border-teal-700 text-teal-700 font-semibold hover:bg-teal-50 transition">
+          <a href="/contact" className="px-6 py-3 rounded-full border border-teal-700 text-teal-700 font-semibold hover:bg-teal-50 transition">
             Volunteer With Us
           </a>
         </div>

@@ -29,6 +29,7 @@ export default function About() {
     },
   };
 
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -74,7 +75,7 @@ export default function About() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/projects"
+                href="/gallery"
                 className="px-6 py-3 border border-gray-300 rounded-xl font-medium text-gray-700 hover:bg-gray-100 transition shadow-sm"
               >
                 View Our Work

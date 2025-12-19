@@ -39,7 +39,7 @@ export default function EducationAndTraining() {
             className="flex justify-center"
           >
             <img
-              src="/education.jpg"
+              src="/education1.jpg"
               className="w-full max-w-lg rounded-2xl shadow-lg object-cover"
               alt="Education Training"
             />
