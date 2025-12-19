@@ -235,7 +235,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../assets/images/logo3.png";
+import logo from "../../assets/images/logo.png";
 import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
@@ -315,7 +315,7 @@ export default function Navbar() {
         <img
           src={logo}
           alt="logo"
-          className="h-12 w-auto object-contain scale-[2.3]"
+className="h-16 w-auto object-contain"
           style={{ transformOrigin: "left center" }}
         />
       </div>

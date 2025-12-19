@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
 <section
-  className="relative w-full h-[90vh] min-h-[650px] flex items-center justify-center px-4 sm:px-6 overflow-hidden"
+  className="relative w-full h-[90vh] min-h-[650px] flex items-center justify-center  sm:px-6 overflow-hidden mt-4"
   style={{ fontFamily: "'Playfair Display', serif" }}
 >
 
