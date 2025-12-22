@@ -261,9 +261,9 @@ export default function Navbar() {
   ];
 
   const serviceLinks = [
-    { name: "NGO", path: "/services/ngo" },
-    { name: "Finance", path: "/services/finance" },
-    { name: "Education & Training", path: "/services/education-training" },
+    { name: "NGO & Support", path: "/services/ngo" },
+    { name: "Finance & Support", path: "/services/finance" },
+    { name: "Skill Training & Support", path: "/services/education-training" },
   ];
 
   const aboutLinks = [
