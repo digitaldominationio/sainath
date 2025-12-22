@@ -137,19 +137,7 @@ export default function EducationAndTraining() {
         />
       </section>
 
-      {/* RESOURCES SECTION */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Training Resources & PPTs
-        </h2>
-
-        <div className="bg-white rounded-2xl shadow p-10 border border-gray-200">
-          <p className="text-gray-700 text-lg">
-            Coming Soon — You will be able to download training materials, guides, PPTs, worksheets,
-            and session resources directly from this section.
-          </p>
-        </div>
-      </section>
+      
 
       {/* FOOTER MESSAGE */}
       <section className="max-w-7xl mx-auto px-6 py-20 text-center">
