@@ -29,12 +29,16 @@ const SERVICES = [
   },
   {
     key: "child-welfare",
-    title: "Child Welfare / Orphanage Support",
-    short: "Shelter, education, nutrition and emotional care for vulnerable children.",
+    title: "Child Welfare & Nutrition",
+    short: "Holistic development of children through nutrition, health, education access, and protection for underprivileged communities.",
     details: [
-      "Support orphanages with food, clothing and sanitation.",
-      "Provide school material, tuition support and mentorship.",
-      "Child protection programs, counseling and recreational activities."
+      "Child Nutrition Support: Supplementary nutrition programs, balanced diets, anaemia prevention.",
+      "Maternal & Early Childhood Care: Nutrition education for mothers, IYCF awareness, Anganwadi support.",
+      "Health & Growth Monitoring: Regular check-ups, immunization awareness, deworming.",
+      "Education & Early Learning: ECCE support, school enrollment programs, learning materials.",
+      "WASH Programs: Safe drinking water, handwashing, menstrual hygiene education.",
+      "Child Protection & Rights: Prevention of child labour and abuse, counseling support.",
+      "Community Engagement: Parenting workshops, convergence with ASHA and Anganwadi systems."
     ],
     img: "/childwelfare.jpg"
   },
@@ -63,11 +67,15 @@ const SERVICES = [
   {
     key: "women-empowerment",
     title: "Women Empowerment",
-    short: "Skill building, SHG formation, financial literacy and livelihood support.",
+    short: "Empowering women socially, economically, and digitally for inclusive growth and leadership.",
     details: [
-      "Run vocational & entrepreneurship training for women.",
-      "Support SHG formation and market linkages.",
-      "Financial literacy and small-business seed support."
+      "Education & Skill Development: Functional literacy, vocational skills, entrepreneurship training.",
+      "Economic Empowerment: SHG formation, micro-enterprises, market linkage and branding support.",
+      "Financial Inclusion: Bank accounts, digital payments (UPI), savings and credit awareness.",
+      "Digital Empowerment: Smartphone literacy, WhatsApp Business, social media marketing.",
+      "Health & Well-being: Reproductive health, nutrition, mental health support.",
+      "Safety & Legal Awareness: Women's rights, prevention of violence, legal aid referrals.",
+      "Leadership Development: Community participation, Panchayat involvement, peer mentoring."
     ],
     img: "/womenempowerment.jpg"
   },
@@ -83,13 +91,17 @@ const SERVICES = [
     img: "/animalwelfare.jpg"
   },
   {
-    key: "health-camps",
-    title: "Health Camps & Medical Support",
-    short: "Free medical camps, screening, medicines & referral support.",
+    key: "healthcare",
+    title: "Healthcare Access",
+    short: "Equitable access to affordable, preventive, and quality healthcare for underserved communities.",
     details: [
-      "Organize primary health camps and specialist outreach clinics.",
-      "Eye checkups, dental camps and maternal-child health programs.",
-      "Create referral linkages to hospitals and diagnostics."
+      "Primary Healthcare: Free/low-cost health camps, basic diagnostics, hospital referral linkages.",
+      "Preventive Healthcare: Health awareness sessions, vaccination, NCD screening.",
+      "Maternal & Geriatric Care: Antenatal/postnatal care, child health, senior citizen support.",
+      "Digital & Telemedicine: Tele-consultation, ABHA support, health helpline coordination.",
+      "Health Insurance: Ayushman Bharat enrollment, state schemes, claim process support.",
+      "Mental Health: Stress and anxiety awareness, counseling, community sensitization.",
+      "Public Health & Sanitation: WASH awareness, vector-borne disease prevention, cleanliness drives."
     ],
     img: "/healthcamps.jpg"
   },
@@ -105,13 +117,17 @@ const SERVICES = [
     img: "/communitydevelopment.jpg"
   },
   {
-    key: "env-protection",
-    title: "Environmental Protection",
-    short: "Ecosystem preservation, cleanups and sustainable farming education.",
+    key: "environment",
+    title: "Environmental Sustainability",
+    short: "Responsible environmental practices and conservation for a cleaner, greener, climate-resilient future.",
     details: [
-      "River/shore clean-ups, and anti-pollution awareness.",
-      "Promote sustainable & regenerative agriculture practices.",
-      "Teach composting, soil health and water-conservation techniques."
+      "Environmental Awareness: Climate change programs, school eco-clubs, education campaigns.",
+      "Tree Plantation & Biodiversity: Native tree drives, urban green spaces, medicinal plant protection.",
+      "Water Conservation: Rainwater harvesting, pond revival, efficient water use awareness.",
+      "Waste Management: Solid/liquid waste awareness, plastic-free campaigns, composting initiatives.",
+      "Clean Energy: Solar energy promotion, clean cooking fuel, resource conservation.",
+      "Community Engagement: Youth-led green drives, partnerships with schools and SHGs.",
+      "Climate Action: Climate risk awareness, disaster response training, green livelihoods."
     ],
     img: "/environmentalprotection.jpg"
   },
@@ -136,6 +152,32 @@ const SERVICES = [
       "Support micro-entrepreneurship and startup mentorship."
     ],
     img: "/skilldevelopment.jpg"
+  },
+  {
+    key: "education-digital",
+    title: "Education & Digital Literacy",
+    short: "Essential education and digital skills for employment and self-reliance.",
+    details: [
+      "Adult literacy, basic education support, and digital literacy programs.",
+      "Employment-oriented digital skills and financial literacy.",
+      "Entrepreneur enablement and senior citizen digital support."
+    ],
+    img: "/education1.jpg"
+  },
+  {
+    key: "agriculture",
+    title: "Sustainable Agriculture",
+    short: "Environmentally responsible and economically viable agricultural practices for farmer income and food security.",
+    details: [
+      "Organic & Natural Farming: Chemical-free practices, composting, bio-fertilizers, organic certification.",
+      "Soil & Water Conservation: Soil testing, rainwater harvesting, micro-irrigation, crop rotation.",
+      "Climate-Resilient Agriculture: Drought/flood-resistant crops, climate-smart practices, weather planning.",
+      "Farmer Training: Farmer Field Schools, demonstration plots, digital advisory services.",
+      "SHG & FPO Empowerment: Formation of SHGs/FPOs, market linkages (e-NAM), digital record-keeping.",
+      "Financial Support: Government schemes awareness (PMFBY, NABARD), crop loans, insurance education.",
+      "Value Addition: Post-harvest management, food processing, branding, direct-to-consumer models."
+    ],
+    img: "/plantation.jpg"
   },
 ];
 
@@ -186,7 +228,7 @@ export default function NGO() {
               className="bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all"
             >
               <div className="w-14 h-14 rounded-full bg-teal-50 flex items-center justify-center text-2xl font-semibold text-teal-700 mb-4">
-                {s.title.split(" ").slice(0,2).map(w => w[0]).join("")}
+                {s.title.split(" ").slice(0, 2).map(w => w[0]).join("")}
               </div>
 
               <h3 className="text-xl font-semibold text-gray-900">{s.title}</h3>

@@ -20,7 +20,7 @@ export default function AppRouter() {
     <BrowserRouter>
       <Header />
 
-      <main className="pt-18"> 
+      <main className="pt-18">
         {/* Offset for fixed navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,10 +31,10 @@ export default function AppRouter() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/services/finance" element={<Finance />} />
           <Route path="/services/education-training" element={<EducationAndTraining />} />
-          <Route path ="/message" element={ <Message/> } />
+          <Route path="/message" element={<Message />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
-          <Route path ="/privacy-policy" element={ <PrivacyPolicy/> } />
-          
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
           {/* Fallback route */}
           <Route path="*" element={<h1 className="text-center py-20 text-2xl">404 - Page Not Found</h1>} />
         </Routes>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ServiceCard from "../components/common/ServiceCard";
+import { educationData } from "../data/educationData";
 
 export default function EducationAndTraining() {
   return (
@@ -9,7 +10,7 @@ export default function EducationAndTraining() {
       {/* HERO SECTION */}
       <section className="w-full bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* LEFT TEXT */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -21,13 +22,13 @@ export default function EducationAndTraining() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              At <span className="font-semibold text-teal-700">PlacementOdisha Skill Academy</span>, 
-              we empower students, youth, and professionals with structured, industry-aligned, 
+              At <span className="font-semibold text-teal-700">PlacementOdisha Skill Academy</span>,
+              we empower students, youth, and professionals with structured, industry-aligned,
               and skill-based training programs designed to build strong careers and brighter futures.
             </p>
 
             <p className="text-gray-600">
-              Our mission is to provide accessible, practical and employment-oriented training 
+              Our mission is to provide accessible, practical and employment-oriented training
               that creates real opportunities across Odisha and beyond.
             </p>
           </motion.div>
@@ -121,6 +122,67 @@ export default function EducationAndTraining() {
             title="Skill Growth Workshops"
             description="Short-term workshops focused on enhancing specific skills like MS Office, Digital Literacy, etc."
           />
+        </div>
+      </section>
+
+      {/* EDUCATION & DIGITAL LITERACY SECTION */}
+      <section className="w-full bg-teal-50 py-20 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Education & Digital Literacy
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {educationData.objective}
+            </p>
+          </div>
+
+          {/* FOCUS AREAS GRID */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {educationData.focusAreas.map((area, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1"
+              >
+                <div className="text-5xl mb-6 bg-teal-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                  {area.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4 text-center md:text-left">
+                  {area.title}
+                </h3>
+                <ul className="space-y-3">
+                  {area.items.map((item, idx) => (
+                    <li key={idx} className="flex items-start text-gray-600">
+                      <span className="mr-2 text-teal-500 mt-1.5 text-lg">•</span>
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* OUTCOMES */}
+          <div className="bg-teal-700 rounded-3xl p-10 md:p-14 text-white shadow-xl relative overflow-hidden">
+            {/* Decorative Circle */}
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-teal-600 rounded-full opacity-50 blur-3xl"></div>
+            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-teal-500 rounded-full opacity-50 blur-3xl"></div>
+
+            <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center relative z-10">
+              Outcome & Impact
+            </h3>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+              {educationData.outcomes.map((outcome, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 rounded-xl p-6 backdrop-blur-md border border-white/20 hover:bg-white/20 transition duration-300 flex items-center justify-center text-center h-full"
+                >
+                  <p className="font-semibold text-lg tracking-wide">{outcome}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
