@@ -27,7 +27,7 @@ export default function Contact() {
               <p>
                 <span className="font-semibold">📍 Address:</span><br />
                 Sainath Educational & Charitable Trust,<br />
-                Redika Street, Lanjipalli, Brahmapur,<br />
+                Lanjipalli, Brahmapur, Ganjam , 760001<br />
                 Odisha, India.
               </p>
 
