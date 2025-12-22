@@ -15,6 +15,8 @@ export default function Gallery() {
     { src: "/gallery/10.jpeg", alt: "Placement Drive" },
     { src: "/gallery/17.jpeg", alt: "Community Event" },
     { src: "/gallery/18.jpeg", alt: "Humanitarian Work" },
+    { src: "/gallery/19.jpeg", alt: "Cleanliness Drive" },
+    { src: "/gallery/20.jpeg", alt: "Placement Drive" },
   ];
 
   const [selected, setSelected] = useState(null);

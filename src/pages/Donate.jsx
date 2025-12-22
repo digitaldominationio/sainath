@@ -32,7 +32,7 @@ export default function Donate() {
             {/* PAN Card */}
             <div
               className="p-6 bg-white rounded-xl border border-gray-100 shadow cursor-pointer hover:shadow-lg transition"
-              onClick={() => setPreviewImage("/pan.jpg")}
+              onClick={() => setPreviewImage("/pancard.jpeg")}
             >
               <img
                 src="/pancard.jpeg"
@@ -45,7 +45,7 @@ export default function Donate() {
             {/* Aadhar Card */}
             <div
               className="p-6 bg-white rounded-xl border border-gray-100 shadow cursor-pointer hover:shadow-lg transition"
-              onClick={() => setPreviewImage("/aadhar.jpg")}
+              onClick={() => setPreviewImage("/aadhar.jpeg")}
             >
               <img
                 src="/aadhar.jpeg"

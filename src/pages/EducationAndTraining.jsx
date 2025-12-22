@@ -118,7 +118,7 @@ export default function EducationAndTraining() {
             description="Job-oriented training for Retail, Banking, ITES, BPO, Hospitality and more with practical exposure."
           />
           <ServiceCard
-            image="/EducationandTraining/2.jpeg"
+            image="/about/Chairman.jpeg"
             title="Skill Growth Workshops"
             description="Short-term workshops focused on enhancing specific skills like MS Office, Digital Literacy, etc."
           />
@@ -193,7 +193,7 @@ export default function EducationAndTraining() {
         </h2>
 
         <ServiceCard
-          image="/EducationandTraining/6.jpeg"
+          image="/gallery/10.jpeg"
           title="Job Placement Orientation Program"
           description="A complete job-readiness pathway with GD practice, interview handling, résumé building, mock interviews, aptitude sessions & communication strengthening."
         />
