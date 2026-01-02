@@ -25,10 +25,17 @@ export default function Contact() {
             <div className="mt-8 space-y-4 text-gray-700">
 
               <p>
-                <span className="font-semibold">📍 Address:</span><br />
+                <span className="font-semibold">📍 Registered Address:</span><br />
                 Sainath Educational & Charitable Trust,<br />
                 Lanjipalli, Brahmapur, Ganjam , 760001<br />
                 Odisha, India.
+              </p>
+
+              <p>
+                <span className="font-semibold">🏢 Office Address:</span><br />
+                12 of PS-08, Fourth Floor,<br />
+                Symphony Mall, Hanspal,<br />
+                Bhubaneswar, Odisha – 752101
               </p>
 
               <p>

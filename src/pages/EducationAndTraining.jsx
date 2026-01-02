@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import ServiceCard from "../components/common/ServiceCard";
 import { educationData } from "../data/educationData";
+import { useLocation } from "react-router-dom";
 
 export default function EducationAndTraining() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-gray-50">
 
@@ -126,7 +142,7 @@ export default function EducationAndTraining() {
       </section>
 
       {/* EDUCATION & DIGITAL LITERACY SECTION */}
-      <section className="w-full bg-teal-50 py-20 border-y border-gray-200">
+      <section id="education-digital-literacy" className="w-full bg-teal-50 py-20 border-y border-gray-200 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -199,7 +215,7 @@ export default function EducationAndTraining() {
         />
       </section>
 
-      
+
 
       {/* FOOTER MESSAGE */}
       <section className="max-w-7xl mx-auto px-6 py-20 text-center">

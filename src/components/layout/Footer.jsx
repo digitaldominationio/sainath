@@ -47,10 +47,10 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
-            {["About Us", "Gallery", "Donate", "Terms and Condition" , "Privacy Policy"].map((item, index) => {
+            {["About Us", "Gallery", "Donate", "Terms and Condition", "Privacy Policy"].map((item, index) => {
               const paths = {
                 "About Us": "/about",
-                 "Terms and Condition": "/terms-and-conditions",
+                "Terms and Condition": "/terms-and-conditions",
                 "Gallery": "/gallery",
                 "Donate": "/donate",
                 "Privacy Policy": "/privacy-policy"
@@ -82,9 +82,20 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
 
           <div className="space-y-3 text-gray-400">
-            <p className="flex items-center gap-2">
-              <MapPin size={18} className="text-teal-300" /> Redika Street, Lanjipalli, Brahmapur, Odisha, India
-            </p>
+            <div className="flex gap-2">
+              <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
+              <div>
+                <span className="font-semibold text-white block">Registered Address:</span>
+                Redika Street, Lanjipalli, Brahmapur, Odisha, India
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
+              <div>
+                <span className="font-semibold text-white block">Office Address:</span>
+                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar, Odisha – 752101
+              </div>
+            </div>
             <p className="flex items-center gap-2">
               <Phone size={18} className="text-teal-300" /> +91 9338311234
             </p>

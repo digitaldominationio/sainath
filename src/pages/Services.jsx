@@ -1,8 +1,9 @@
 // NGO.jsx — Full NGO page with 12 services
 // TailwindCSS + framer-motion only (no extra CSS)
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const SERVICES = [
   {
@@ -182,6 +183,21 @@ const SERVICES = [
 ];
 
 export default function NGO() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-gray-50">
 
@@ -241,7 +257,7 @@ export default function NGO() {
       {/* DETAILED SECTIONS (alternating layout) */}
       <section className="max-w-7xl mx-auto px-6 py-8 space-y-20">
         {SERVICES.map((s, idx) => (
-          <div key={s.key} className="grid md:grid-cols-2 gap-10 items-center">
+          <div key={s.key} id={s.key} className="grid md:grid-cols-2 gap-10 items-center scroll-mt-24">
             {/* alternate image position */}
             {idx % 2 === 0 ? (
               <>

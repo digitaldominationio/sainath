@@ -9,7 +9,7 @@ export default function FocusAreas() {
       icon: "🎓",
       color: "from-blue-500 to-cyan-500",
       stats: "2000+ Students Trained",
-      link: "/services/education-training"
+      link: "/services/education-training#education-digital-literacy"
     },
     {
       title: "Sustainable Agriculture",
@@ -17,7 +17,7 @@ export default function FocusAreas() {
       icon: "🌾",
       color: "from-green-500 to-emerald-500",
       stats: "500+ Farmers Empowered",
-      link: "/services/ngo"
+      link: "/services/ngo#agriculture"
     },
     {
       title: "Child Welfare & Nutrition",
@@ -25,7 +25,7 @@ export default function FocusAreas() {
       icon: "👶",
       color: "from-pink-500 to-rose-500",
       stats: "1000+ Children Supported",
-      link: "/services/ngo"
+      link: "/services/ngo#child-welfare"
 
     },
     {
@@ -34,7 +34,7 @@ export default function FocusAreas() {
       icon: "🏥",
       color: "from-red-500 to-orange-500",
       stats: "50+ Medical Camps",
-      link: "/services/ngo"
+      link: "/services/ngo#healthcare"
     },
     {
       title: "Environmental Sustainability",
@@ -42,7 +42,7 @@ export default function FocusAreas() {
       icon: "🌳",
       color: "from-emerald-500 to-teal-500",
       stats: "10,000+ Trees Planted",
-      link: "/services/ngo"
+      link: "/services/ngo#environment"
     },
     {
       title: "Women Empowerment",
@@ -50,7 +50,7 @@ export default function FocusAreas() {
       icon: "💪",
       color: "from-purple-500 to-pink-500",
       stats: "300+ Women Trained",
-      link: "/services/ngo"
+      link: "/services/ngo#women-empowerment"
     }
   ];
 
@@ -65,11 +65,11 @@ export default function FocusAreas() {
   const navigate = useNavigate();
 
   const cardAnim = {
-    hidden: { 
-      opacity: 0, 
-      y: 50, 
+    hidden: {
+      opacity: 0,
+      y: 50,
       scale: 0.9,
-      rotateX: 10 
+      rotateX: 10
     },
     visible: {
       opacity: 1,
@@ -115,13 +115,15 @@ export default function FocusAreas() {
             <motion.div
               key={item.title}
               variants={cardAnim}
-              whileHover={{ 
-                y: -8, 
+              whileHover={{
+                y: -8,
                 scale: 1.02,
                 transition: { type: "spring", stiffness: 300 }
               }}
-              onClick={()=> 
-                {window.scrollTo({ top: 0, behavior: "smooth" })
+              onClick={() => {
+                if (!item.link.includes('#')) {
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                }
                 navigate(item.link)
               }}
               className="
@@ -133,10 +135,10 @@ export default function FocusAreas() {
             >
               {/* Gradient Overlay on Hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
-              
+
               {/* Animated Icon */}
               <motion.div
-                whileHover={{ 
+                whileHover={{
                   scale: 1.1,
                   rotate: [0, -5, 5, 0]
                 }}
