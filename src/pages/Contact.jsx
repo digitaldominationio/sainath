@@ -46,7 +46,7 @@ export default function Contact() {
 
               <p>
                 <span className="font-semibold">📧 Email:</span><br />
-                contact.sainathedu@gmail.com
+                info@sainathtrust.in
               </p>
 
               <p>
