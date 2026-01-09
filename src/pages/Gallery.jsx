@@ -17,11 +17,6 @@ export default function Gallery() {
         { src: "/gallery/14.jpeg", alt: "Volunteer team" },
         { src: "/gallery/16.jpeg", alt: "Group of volunteers" },
         { src: "/gallery/7.jpeg", alt: "Volunteers in action" },
-      ]
-    },
-    {
-      title: "Community Events",
-      images: [
         { src: "/gallery/8.jpeg", alt: "Community program" },
         { src: "/gallery/9.jpg", alt: "Community outreach" },
         { src: "/gallery/17.jpeg", alt: "Local community event" },
@@ -31,20 +26,27 @@ export default function Gallery() {
       title: "Placement Drives",
       images: [
         { src: "/gallery/10.jpeg", alt: "Job placement drive" },
-        { src: "/gallery/20.jpeg", alt: "Recruitment event" },
+        { src: "/gallery/20.jpeg", alt: "" },
+        { src: "/gallery/21.jpeg", alt: "" },
+
       ]
     },
     {
       title: "Charity & Humanitarian Work",
       images: [
         { src: "/gallery/15.jpeg", alt: "Charity distribution" },
-        { src: "/gallery/18.jpeg", alt: "Humanitarian aid" },
+        { src: "/gallery/18.jpeg", alt: "" },
+        { src: "/gallery/6.jpg", alt: "" },
+
       ]
     },
     {
       title: "Swachh Bharat Abhiyan",
       images: [
         { src: "/gallery/19.jpeg", alt: "Swachh Bharat Abhiyan" },
+        { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
+        { src: "/gallery/23.jpg", alt: "Swachh Bharat Abhiyan" },
+
       ]
     }
   ];
@@ -86,10 +88,6 @@ export default function Gallery() {
                           className="object-cover w-full h-full transform group-hover:scale-105 transition duration-500"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-                      </div>
-
-                      <div className="p-3 bg-white text-left">
-                        <p className="text-sm text-gray-700 truncate">{img.alt}</p>
                       </div>
                     </button>
                   ))}

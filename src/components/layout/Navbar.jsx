@@ -85,13 +85,15 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Center Text: Trust Name & UAN */}
-      <div className="hidden md:flex flex-col items-center text-center mx-4">
+      {/* Center Text: Trust Name & Registration Details */}
+      <div className="hidden lg:flex flex-col items-center text-center mx-4">
         <h1 className="text-xl lg:text-2xl font-bold font-serif text-teal-900 tracking-wide">
           Sainath Education and Charitable Trust
         </h1>
         <p className="text-sm text-blue-900 font-medium tracking-wider mt-1">
-          UAN: <span className="font-mono font-bold text-blue-900">530993700693</span>
+          Regd No: <span className="font-mono font-bold text-blue-900">40601307468</span>
+          <span className="mx-3">|</span>
+          UAN: <span className="font-mono font-bold text-blue-900">OD11E0004078</span>
         </p>
       </div>
 

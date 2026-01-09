@@ -25,6 +25,14 @@ export default function Contact() {
             <div className="mt-8 space-y-4 text-gray-700">
 
               <p>
+                <span className="font-semibold">🏢 Office Address:</span><br />
+                Sainath Educational and Charitable Trust,<br />
+                12 of PS-08, Fourth Floor,<br />
+                Symphony Mall, Hanspal,<br />
+                Bhubaneswar, Odisha – 752101
+              </p>
+
+              <p>
                 <span className="font-semibold">📍 Registered Address:</span><br />
                 Sainath Educational & Charitable Trust,<br />
                 Lanjipalli, Brahmapur, Ganjam , 760001<br />
@@ -32,25 +40,18 @@ export default function Contact() {
               </p>
 
               <p>
-                <span className="font-semibold">🏢 Office Address:</span><br />
-                12 of PS-08, Fourth Floor,<br />
-                Symphony Mall, Hanspal,<br />
-                Bhubaneswar, Odisha – 752101
-              </p>
-
-              <p>
-                <span className="font-semibold">📞 Phone:</span><br />
-                +91 9338311234<br />
+                <span className="font-semibold">📞 Phone:</span>
+                +91 8280955389
               </p>
 
               <p>
                 <span className="font-semibold">📧 Email:</span><br />
-                contactsainathedu@gmail.com
+                contact.sainathedu@gmail.com
               </p>
 
               <p>
                 <span className="font-semibold">🌐 Website:</span><br />
-                www.sainathtechno.co.in
+                sainathtrust.in
               </p>
             </div>
           </div>

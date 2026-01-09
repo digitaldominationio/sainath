@@ -85,19 +85,20 @@ export default function Footer() {
             <div className="flex gap-2">
               <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
               <div>
-                <span className="font-semibold text-white block">Registered Address:</span>
-                Redika Street, Lanjipalli, Brahmapur, Odisha, India
+                <span className="font-semibold text-white block">Office Address:</span>
+                Sainath Educational and Charitable Trust,<br />
+                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar, Odisha – 752101
               </div>
             </div>
             <div className="flex gap-2">
               <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
               <div>
-                <span className="font-semibold text-white block">Office Address:</span>
-                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar, Odisha – 752101
+                <span className="font-semibold text-white block">Registered Address:</span>
+                Redika Street, Lanjipalli, Brahmapur, Odisha, India
               </div>
             </div>
             <p className="flex items-center gap-2">
-              <Phone size={18} className="text-teal-300" /> +91 9338311234
+              <Phone size={18} className="text-teal-300" /> +91 8280955389
             </p>
             <p className="flex items-center gap-2">
               <Mail size={18} className="text-teal-300" /> contact.sainathedu@gmail.com

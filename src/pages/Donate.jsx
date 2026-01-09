@@ -118,6 +118,10 @@ export default function Donate() {
                     <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">Bank Name</p>
                     <p className="text-xl font-medium">Bandhan Bank</p>
                   </div>
+                  <div>
+                    <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">Branch Name</p>
+                    <p className="text-xl font-medium">Chandrashekhar Pur Branch, Bhubaneswar</p>
+                  </div>
                 </div>
 
                 <div className="space-y-6">
