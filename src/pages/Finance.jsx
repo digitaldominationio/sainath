@@ -46,7 +46,7 @@ export default function Finance() {
             className="flex justify-center"
           >
             <img
-              src="/106.jpg"
+              src="/401.jpg"
               className="w-full max-w-lg rounded-2xl shadow-lg object-cover"
               alt="PrimeLine Finance"
             />

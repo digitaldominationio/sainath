@@ -89,7 +89,7 @@ export default function About() {
             className="overflow-hidden rounded-2xl shadow-xl"
           >
             <motion.img
-              src="/102.jpg"
+              src="/400.jpg"
               loading="lazy"
               className="w-full h-96 object-cover"
               alt="About Sainath"

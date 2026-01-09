@@ -78,7 +78,7 @@ const SERVICES = [
       "Safety & Legal Awareness: Women's rights, prevention of violence, legal aid referrals.",
       "Leadership Development: Community participation, Panchayat involvement, peer mentoring."
     ],
-    img: "/womenempowerment.jpg"
+    img: "/402.jpg"
   },
   {
     key: "animal-welfare",
@@ -222,7 +222,7 @@ export default function NGO() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="flex justify-center">
-            <img src="/education.jpg" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
+            <img src="/105.png" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
           </motion.div>
         </div>
       </section>
