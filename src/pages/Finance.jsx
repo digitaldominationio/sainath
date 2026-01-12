@@ -265,7 +265,7 @@ export default function Finance() {
         <div className="grid md:grid-cols-2 gap-10">
 
           <img
-            src="/3.jpeg"
+            src="/456.jpeg"
             className="w-full rounded-2xl shadow-lg object-cover"
             alt="Youth Development"
           />
