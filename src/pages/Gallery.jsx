@@ -73,10 +73,10 @@ export default function Gallery() {
             subtitle="Moments from our community initiatives and programs."
           />
 
-          <p className="text-gray-600 max-w-3xl mx-auto text-center mt-3 mb-12">
+          {/* <p className="text-gray-600 max-w-3xl mx-auto text-center mt-3 mb-12">
             Photos that capture training sessions, plantation drives, relief
             work, and the communities we serve.
-          </p>
+          </p> */}
 
           <div className="space-y-16">
             {gallerySections.map((section, sectionIdx) => (

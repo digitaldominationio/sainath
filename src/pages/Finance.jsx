@@ -223,8 +223,7 @@ export default function Finance() {
       <section className="max-w-7xl mx-auto px-6 py-16">
 
         <h2 className="text-3xl font-bold text-gray-800 mb-10">
-          Institutional Collaborations
-        </h2>
+Collaborations        </h2>
 
         <div className="grid md:grid-cols-2 gap-10">
 

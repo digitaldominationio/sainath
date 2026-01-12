@@ -201,12 +201,21 @@ export default function Navbar() {
         {/* Other Links */}
         {otherLinks.map((link) => (
           <li key={link.name}>
-            <button
-              onClick={() => handleNavigation(link.path)}
-              className="hover:text-teal-600 pb-1 cursor-pointer"
-            >
-              {link.name}
-            </button>
+            {link.name === "Donate" ? (
+              <button
+                onClick={() => handleNavigation(link.path)}
+                className="px-5 py-2 rounded-full font-semibold text-white bg-linear-to-r from-teal-500 to-cyan-500 shadow-lg transform transition hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-teal-300"
+              >
+                {link.name}
+              </button>
+            ) : (
+              <button
+                onClick={() => handleNavigation(link.path)}
+                className="hover:text-teal-600 pb-1 cursor-pointer"
+              >
+                {link.name}
+              </button>
+            )}
           </li>
         ))}
       </ul>
@@ -313,12 +322,21 @@ export default function Navbar() {
           {/* Other Links */}
           {otherLinks.map((link) => (
             <li key={link.name}>
-              <button
-                onClick={() => handleNavigation(link.path)}
-                className="block py-2 hover:text-teal-600 w-full text-left"
-              >
-                {link.name}
-              </button>
+              {link.name === "Donate" ? (
+                <button
+                  onClick={() => handleNavigation(link.path)}
+                  className="w-full px-4 py-3 rounded-full bg-linear-to-r from-teal-500 to-cyan-500 text-white font-semibold shadow-lg text-center"
+                >
+                  {link.name}
+                </button>
+              ) : (
+                <button
+                  onClick={() => handleNavigation(link.path)}
+                  className="block py-2 hover:text-teal-600 w-full text-left"
+                >
+                  {link.name}
+                </button>
+              )}
             </li>
           ))}
         </ul>
