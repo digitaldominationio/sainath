@@ -27,9 +27,17 @@ export default function Contact() {
               <p>
                 <span className="font-semibold">🏢 Office Address:</span><br />
                 Sainath Educational and Charitable Trust,<br />
-                12 of PS-08, Fourth Floor,<br />
+                12 of PS-08, Third Floor,<br />
                 Symphony Mall, Hanspal,<br />
                 Bhubaneswar, Odisha – 752101
+              </p>
+               <p>
+                <span className="font-semibold">🏢 Office Address:</span><br />
+                Sainath Educational and Charitable Trust,<br />
+               Shop No.1, Seven Hills Complex,  <br />
+                Krishna Talkies Road, Beside Axis Bank, Risali,<br />
+                Bhilai  – 490006<br/>
+                Contact No-7898811806
               </p>
 
               <p>

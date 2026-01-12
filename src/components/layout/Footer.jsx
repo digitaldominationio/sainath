@@ -103,7 +103,7 @@ export default function Footer() {
                 </span>
                 Sainath Educational and Charitable Trust,
                 <br />
-                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar,
+                12 of PS-08, Third Floor, Symphony Mall, Hanspal, Bhubaneswar,
                 Odisha – 752101
               </div>
             </div>
