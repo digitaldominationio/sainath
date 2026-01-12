@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function FocusAreas() {
   const areas = [
@@ -83,8 +84,21 @@ export default function FocusAreas() {
     },
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#focus-areas") {
+      const el = document.getElementById("focus-areas");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 80);
+      }
+    }
+  }, [location]);
+
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section id="focus-areas" className="py-20 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-teal-100/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>

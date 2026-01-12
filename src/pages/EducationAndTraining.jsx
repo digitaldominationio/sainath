@@ -66,25 +66,30 @@ export default function EducationAndTraining() {
 
       {/* WHY CHOOSE US */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow p-10 border border-gray-200 relative">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Why Choose PlacementOdisha Skill Academy?
-          </h2>
+        <div className="bg-white rounded-2xl shadow p-10 border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div className="md:col-span-2">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Why Choose PlacementOdisha Skill Academy?
+              </h2>
 
-          <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
-            <li>✔ 13+ years of experience in training, recruitment, and manpower sourcing.</li>
-            <li>✔ Strong industry partnerships across India with real career pathways.</li>
-            <li>✔ Practical, scenario-based, and project-driven learning approach.</li>
-            <li>✔ Focus on complete development — communication, personality & skills.</li>
-            <li>✔ Programs aligned with NAPS, MSME, Skill India & national frameworks.</li>
-          </ul>
+              <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                <li>✔ 13+ years of experience in training, recruitment, and manpower sourcing.</li>
+                <li>✔ Strong industry partnerships across India with real career pathways.</li>
+                <li>✔ Practical, scenario-based, and project-driven learning approach.</li>
+                <li>✔ Focus on complete development — communication, personality & skills.</li>
+                <li>✔ Programs aligned with NAPS, MSME, Skill India & national frameworks.</li>
+              </ul>
+            </div>
 
-          {/* Decorative image (your own existing image) */}
-          <img
-            src="/105.png"
-            className="absolute right-6 top-6 w-40 opacity-25 rounded-xl"
-            alt="Decorative"
-          />
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/701.jpeg"
+                className="w-full max-w-sm md:w-48 md:h-48 object-cover rounded-xl shadow-md"
+                alt="PlacementOdisha photo"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -112,6 +117,12 @@ export default function EducationAndTraining() {
             title="Virtual Online Training"
             description="Live structured online programs with trainer interaction, tasks, reviews & assessments."
           />
+
+          <ServiceCard
+            image="/EducationandTraining/4.jpeg"
+            title="Custom Workshops & Bootcamps"
+            description="Short intensive workshops focused on role-specific skills, assessments and hands-on projects."
+          />
         </div>
       </section>
 
@@ -134,9 +145,14 @@ export default function EducationAndTraining() {
             description="Job-oriented training for Retail, Banking, ITES, BPO, Hospitality and more with practical exposure."
           />
           <ServiceCard
-            image="/about/Chairman.jpeg"
+            image="/501.jpeg"
             title="Skill Growth Workshops"
             description="Short-term workshops focused on enhancing specific skills like MS Office, Digital Literacy, etc."
+          />
+          <ServiceCard
+            image="/EducationandTraining/6.jpeg"
+            title="Vocational Labs & Practicals"
+            description="Hands-on vocational labs with mentor support and industry-grade equipment."
           />
         </div>
       </section>

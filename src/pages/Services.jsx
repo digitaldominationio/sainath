@@ -152,7 +152,7 @@ const SERVICES = [
       "Link youth to internships, apprenticeships and local jobs.",
       "Support micro-entrepreneurship and startup mentorship."
     ],
-    img: "/skilldevelopment.jpg"
+    img: "/rural.jpg"
   },
   {
     key: "education-digital",
@@ -178,7 +178,7 @@ const SERVICES = [
       "Financial Support: Government schemes awareness (PMFBY, NABARD), crop loans, insurance education.",
       "Value Addition: Post-harvest management, food processing, branding, direct-to-consumer models."
     ],
-    img: "/plantation.jpg"
+    img: "/700.jpg"
   },
 ];
 

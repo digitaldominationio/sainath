@@ -112,65 +112,85 @@ export default function Navbar() {
           </li>
         ))}
 
-        {/* SERVICES DROPDOWN */}
-        <li className="relative" ref={servicesRef}>
-          <button
-            onClick={() => {
-              setOpenServices(!openServices);
-              setOpenAbout(false); // close About
-            }}
-            className="flex items-center gap-1 hover:text-teal-600 transition cursor-pointer"
-          >
-            Services
-            <ChevronDown
-              size={18}
-              className={`transition-transform duration-200 ${openServices ? "rotate-180" : ""
-                }`}
-            />
-          </button>
+        {/* ABOUT DROPDOWN: label navigates to /about; chevron toggles dropdown with Chairman's Message only */}
+        <li className="relative" ref={aboutRef}>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => handleNavigation("/about")}
+              className="hover:text-teal-600 pb-1 cursor-pointer"
+            >
+              About Us
+            </button>
 
-          {openServices && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setOpenAbout(!openAbout);
+                setOpenServices(false);
+              }}
+              aria-label="Toggle about dropdown"
+              className="flex items-center cursor-pointer hover:text-teal-600"
+            >
+              <ChevronDown
+                size={18}
+                className={`transition-transform duration-200 ${openAbout ? "rotate-180" : ""}`}
+              />
+            </button>
+          </div>
+
+          {openAbout && (
             <ul className="absolute top-8 left-0 bg-white shadow-lg border rounded-md w-48 py-2 z-50">
-              {serviceLinks.map((service) => (
-                <li key={service.name}>
-                  <button
-                    onClick={() => handleNavigation(service.path)}
-                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
-                  >
-                    {service.name}
-                  </button>
-                </li>
-              ))}
+              {aboutLinks
+                .filter((item) => item.path === "/message")
+                .map((item) => (
+                  <li key={item.name}>
+                    <button
+                      onClick={() => handleNavigation(item.path)}
+                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    >
+                      {item.name}
+                    </button>
+                  </li>
+                ))}
             </ul>
           )}
         </li>
 
-        {/* ABOUT DROPDOWN */}
-        <li className="relative" ref={aboutRef}>
-          <button
-            onClick={() => {
-              setOpenAbout(!openAbout);
-              setOpenServices(false); // close Services
-            }}
-            className="flex items-center gap-1 hover:text-teal-600 transition cursor-pointer"
-          >
-            About
-            <ChevronDown
-              size={18}
-              className={`transition-transform duration-200 ${openAbout ? "rotate-180" : ""
-                }`}
-            />
-          </button>
+        {/* SERVICES: label navigates to home focus area; chevron toggles dropdown with service links */}
+        <li className="relative" ref={servicesRef}>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => handleNavigation("/#focus-areas")}
+              className="hover:text-teal-600 pb-1 cursor-pointer"
+            >
+              Services
+            </button>
 
-          {openAbout && (
-            <ul className="absolute top-8 left-0 bg-white shadow-lg border rounded-md w-48 py-2 z-50">
-              {aboutLinks.map((item) => (
-                <li key={item.name}>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setOpenServices(!openServices);
+                setOpenAbout(false);
+              }}
+              aria-label="Toggle services dropdown"
+              className="flex items-center cursor-pointer hover:text-teal-600"
+            >
+              <ChevronDown
+                size={18}
+                className={`transition-transform duration-200 ${openServices ? "rotate-180" : ""}`}
+              />
+            </button>
+          </div>
+
+          {openServices && (
+            <ul className="absolute top-8 left-0 bg-white shadow-lg border rounded-md w-56 py-2 z-50">
+              {serviceLinks.map((service) => (
+                <li key={service.name}>
                   <button
-                    onClick={() => handleNavigation(item.path)}
-                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                    onClick={() => handleNavigation(service.path)}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100 cursor-pointer"
                   >
-                    {item.name}
+                    {service.name}
                   </button>
                 </li>
               ))}
@@ -212,18 +232,67 @@ export default function Navbar() {
             </li>
           ))}
 
-          {/* Mobile SERVICES dropdown */}
+          {/* Mobile ABOUT: label navigates to /about; chevron toggles dropdown showing Chairman's Message */}
           <li>
-            <button
-              onClick={() => setOpenServices(!openServices)}
-              className="flex items-center gap-2 py-2 w-full text-left hover:text-teal-600"
-            >
-              Services
-              <ChevronDown
-                size={18}
-                className={`${openServices ? "rotate-180" : ""} transition`}
-              />
-            </button>
+            <div className="flex items-center justify-between">
+              <button
+                onClick={() => handleNavigation("/about")}
+                className="py-2 w-full text-left hover:text-teal-600"
+              >
+                About Us
+              </button>
+
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenAbout(!openAbout);
+                }}
+                className="p-2 cursor-pointer hover:text-teal-600"
+                aria-label="Toggle about dropdown"
+              >
+                <ChevronDown size={18} className={`${openAbout ? "rotate-180" : ""} transition`} />
+              </button>
+            </div>
+
+            {openAbout && (
+              <ul className="pl-4 mt-2 space-y-2">
+                {aboutLinks
+                  .filter((item) => item.path === "/message")
+                  .map((item) => (
+                    <li key={item.name}>
+                      <button
+                        onClick={() => handleNavigation(item.path)}
+                        className="block py-1 hover:text-teal-600 w-full text-left cursor-pointer"
+                      >
+                        {item.name}
+                      </button>
+                    </li>
+                  ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Mobile SERVICES: label navigates to home focus area; chevron toggles dropdown */}
+          <li>
+            <div className="flex items-center justify-between">
+              <button
+                onClick={() => handleNavigation("/#focus-areas")}
+                className="py-2 w-full text-left hover:text-teal-600"
+              >
+                Services
+              </button>
+
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenServices(!openServices);
+                }}
+                className="p-2 cursor-pointer hover:text-teal-600"
+                aria-label="Toggle services dropdown"
+              >
+                <ChevronDown size={18} className={`${openServices ? "rotate-180" : ""} transition`} />
+              </button>
+            </div>
 
             {openServices && (
               <ul className="pl-4 mt-2 space-y-2">
@@ -231,38 +300,9 @@ export default function Navbar() {
                   <li key={service.name}>
                     <button
                       onClick={() => handleNavigation(service.path)}
-                      className="block py-1 hover:text-teal-600 w-full text-left"
+                      className="block py-1 hover:text-teal-600 w-full text-left cursor-pointer"
                     >
                       {service.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-
-          {/* Mobile ABOUT dropdown */}
-          <li>
-            <button
-              onClick={() => setOpenAbout(!openAbout)}
-              className="flex items-center gap-2 py-2 w-full text-left hover:text-teal-600"
-            >
-              About
-              <ChevronDown
-                size={18}
-                className={`${openAbout ? "rotate-180" : ""} transition`}
-              />
-            </button>
-
-            {openAbout && (
-              <ul className="pl-4 mt-2 space-y-2">
-                {aboutLinks.map((item) => (
-                  <li key={item.name}>
-                    <button
-                      onClick={() => handleNavigation(item.path)}
-                      className="block py-1 hover:text-teal-600 w-full text-left"
-                    >
-                      {item.name}
                     </button>
                   </li>
                 ))}

@@ -10,7 +10,6 @@ const scrollTop = () => {
 export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-300 pt-20 pb-10  relative overflow-hidden">
-
       {/* Soft Glow Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-teal-700/10 via-cyan-600/5 to-transparent blur-3xl"></div>
 
@@ -31,13 +30,22 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4 mt-5">
-            <a href="#" className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition">
+            <a
+              href="#"
+              className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition"
+            >
               <Facebook size={20} />
             </a>
-            <a href="#" className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition">
+            <a
+              href="#"
+              className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition"
+            >
               <Instagram size={20} />
             </a>
-            <a href="#" className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition">
+            <a
+              href="#"
+              className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition"
+            >
               <Mail size={20} />
             </a>
           </div>
@@ -47,13 +55,19 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
-            {["About Us", "Gallery", "Donate", "Terms and Condition", "Privacy Policy"].map((item, index) => {
+            {[
+              "About Us",
+              "Gallery",
+              "Donate",
+              "Terms and Condition",
+              "Privacy Policy",
+            ].map((item, index) => {
               const paths = {
                 "About Us": "/about",
                 "Terms and Condition": "/terms-and-conditions",
-                "Gallery": "/gallery",
-                "Donate": "/donate",
-                "Privacy Policy": "/privacy-policy"
+                Gallery: "/gallery",
+                Donate: "/donate",
+                "Privacy Policy": "/privacy-policy",
               };
 
               return (
@@ -76,7 +90,6 @@ export default function Footer() {
           </ul>
         </div>
 
-
         {/* Contact */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
@@ -85,20 +98,28 @@ export default function Footer() {
             <div className="flex gap-2">
               <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
               <div>
-                <span className="font-semibold text-white block">Office Address:</span>
-                Sainath Educational and Charitable Trust,<br />
-                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar, Odisha – 752101
+                <span className="font-semibold text-white block">
+                  Office Address:
+                </span>
+                Sainath Educational and Charitable Trust,
+                <br />
+                12 of PS-08, Fourth Floor, Symphony Mall, Hanspal, Bhubaneswar,
+                Odisha – 752101
               </div>
             </div>
             <div className="flex gap-2">
               <MapPin size={18} className="text-teal-300 shrink-0 mt-1" />
               <div>
-                <span className="font-semibold text-white block">Registered Address:</span>
-                Redika Street, Lanjipalli, Brahmapur, Odisha, India
+                <span className="font-semibold text-white block">
+                  Registered Address:
+                </span>
+                Sainath Educational and Charitable Trust,
+                <br />
+                Redika Street, Lanjipalli, Brahmapur, Odisha - 760008
               </div>
             </div>
             <p className="flex items-center gap-2">
-              <Phone size={18} className="text-teal-300" /> +91 8280955389
+              <Phone size={18} className="text-teal-300" /> +91 828 0955 389
             </p>
             <p className="flex items-center gap-2">
               <Mail size={18} className="text-teal-300" /> info@sainathtrust.in
@@ -120,7 +141,8 @@ export default function Footer() {
         viewport={{ once: true }}
         className="text-center text-gray-500 text-sm mt-6"
       >
-        © {new Date().getFullYear()} Sainath Educational & Charitable Trust — All Rights Reserved.
+        © {new Date().getFullYear()} Sainath Educational & Charitable Trust —
+        All Rights Reserved.
       </motion.p>
     </footer>
   );

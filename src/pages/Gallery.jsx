@@ -9,7 +9,9 @@ export default function Gallery() {
         { src: "/gallery/1.jpeg", alt: "Social event gathering" },
         { src: "/gallery/2.jpeg", alt: "Community social event" },
         { src: "/gallery/13.jpeg", alt: "Social gathering" },
-      ]
+        { src: "/gallery/8.jpeg", alt: "Community program" },
+        { src: "/gallery/9.jpg", alt: "Community outreach" },
+      ],
     },
     {
       title: "Volunteer Groups",
@@ -17,10 +19,10 @@ export default function Gallery() {
         { src: "/gallery/14.jpeg", alt: "Volunteer team" },
         { src: "/gallery/16.jpeg", alt: "Group of volunteers" },
         { src: "/gallery/7.jpeg", alt: "Volunteers in action" },
-        { src: "/gallery/8.jpeg", alt: "Community program" },
-        { src: "/gallery/9.jpg", alt: "Community outreach" },
+        { src: "/gallery/15.jpeg", alt: "Charity distribution" },
+        { src: "/gallery/18.jpeg", alt: "" },
         { src: "/gallery/17.jpeg", alt: "Local community event" },
-      ]
+      ],
     },
     {
       title: "Placement Drives",
@@ -28,8 +30,7 @@ export default function Gallery() {
         { src: "/gallery/10.jpeg", alt: "Job placement drive" },
         { src: "/gallery/20.jpeg", alt: "" },
         { src: "/gallery/21.jpeg", alt: "" },
-
-      ]
+      ],
     },
     {
       title: "Charity & Humanitarian Work",
@@ -37,18 +38,16 @@ export default function Gallery() {
         { src: "/gallery/15.jpeg", alt: "Charity distribution" },
         { src: "/gallery/18.jpeg", alt: "" },
         { src: "/gallery/6.jpg", alt: "" },
-
-      ]
+      ],
     },
     {
       title: "Swachh Bharat Abhiyan",
       images: [
         { src: "/gallery/19.jpeg", alt: "Swachh Bharat Abhiyan" },
-        { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
         { src: "/gallery/23.jpg", alt: "Swachh Bharat Abhiyan" },
-
-      ]
-    }
+        { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
+      ],
+    },
   ];
 
   const [selected, setSelected] = useState(null);
@@ -63,8 +62,8 @@ export default function Gallery() {
           />
 
           <p className="text-gray-600 max-w-3xl mx-auto text-center mt-3 mb-12">
-            Photos that capture training sessions, plantation drives, relief work,
-            and the communities we serve.
+            Photos that capture training sessions, plantation drives, relief
+            work, and the communities we serve.
           </p>
 
           <div className="space-y-16">

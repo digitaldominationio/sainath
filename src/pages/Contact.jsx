@@ -35,13 +35,13 @@ export default function Contact() {
               <p>
                 <span className="font-semibold">📍 Registered Address:</span><br />
                 Sainath Educational & Charitable Trust,<br />
-                Lanjipalli, Brahmapur, Ganjam , 760001<br />
+                Lanjipalli, Brahmapur, Ganjam , 760008<br />
                 Odisha, India.
               </p>
 
               <p>
                 <span className="font-semibold">📞 Phone:</span>
-                +91 8280955389
+                +91 828 0955 389
               </p>
 
               <p>
@@ -51,7 +51,7 @@ export default function Contact() {
 
               <p>
                 <span className="font-semibold">🌐 Website:</span><br />
-                sainathtrust.in
+                www.sainathtrust.in
               </p>
             </div>
           </div>
