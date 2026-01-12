@@ -28,7 +28,7 @@ export default function Donate() {
             className="group relative bg-white rounded-3xl p-4 shadow-xl border border-slate-100 cursor-pointer overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
             onClick={() => setPreviewImage("/pancard.jpeg")}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-end justify-center pb-6">
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-end justify-center pb-6">
               <span className="bg-white/90 text-slate-900 px-6 py-2 rounded-full font-bold shadow-lg backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">
                 View Original Document
               </span>
@@ -90,7 +90,7 @@ export default function Donate() {
 
         {/* Bottom Section: Bank Details */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl text-white relative overflow-hidden">
+          <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl text-white relative overflow-hidden">
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-teal-500 opacity-10 rounded-full blur-3xl"></div>

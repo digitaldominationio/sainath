@@ -56,20 +56,31 @@ export default function Finance() {
       </section>
 
       {/* WHO WE SUPPORT */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <section className="w-full px-6 py-20">
 
-        <h2 className="text-3xl font-bold text-teal-700 mb-4">
-          Who We Support
-        </h2>
+        {/* Full-width heading + intro */}
+        <div className="w-full px-6 lg:px-24">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-teal-700 mb-6">
+            Who We Support
+          </h2>
 
-        <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-3xl">
-          PrimeLine Finance is committed to supporting individuals, groups, and community-driven
-          organisations across Odisha. We focus on strengthening financial access, livelihood
-          opportunities, entrepreneurship, and growth for diverse beneficiary groups.
-        </p>
+          <p className="text-gray-700 text-xl leading-relaxed mb-6 max-w-full">
+            PrimeLine Finance is committed to supporting individuals, groups, and community-driven
+            organisations across Odisha. We focus on strengthening financial access, livelihood
+            opportunities, entrepreneurship, and growth for diverse beneficiary groups.
+          </p>
 
-        {/* GRID */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-full">
+            Our programmes combine tailored credit linkage, scheme facilitation, technical
+            assistance and market access support. We work closely with SHGs, FPOs, MSMEs and
+            local youth groups to design sustainable solutions — from business planning and
+            capacity building to loan processing and follow-up mentorship.
+          </p>
+        </div>
+
+        {/* Constrained cards grid */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* CARD 1 */}
           <div className="bg-white p-8 rounded-2xl shadow border hover:shadow-lg transition">
@@ -137,6 +148,7 @@ export default function Finance() {
             </p>
           </div>
 
+          </div>
         </div>
       </section>
 

@@ -4,17 +4,24 @@ import SectionTitle from "../components/common/SectionTitle";
 export default function Gallery() {
   const gallerySections = [
     {
-      title: "Social Events",
+      title: "Social Development Activities And Field Work",
       images: [
-        { src: "/gallery/1.jpeg", alt: "Social event gathering" },
+        { src: "/gallery/9.jpg", alt: "Community outreach" },
+        { src: "/gallery/8.jpeg", alt: "Community program" },
+        { src: "/gallery/24.jpeg", alt: "Community program" },
+        { src: "/gallery/27.jpeg", alt: "Community program" },
+        { src: "/gallery/25.jpeg", alt: "Community program" },
+        { src: "/gallery/26.jpeg", alt: "Community program" },
+        { src: "/gallery/28.jpeg", alt: "Social event gathering" },
         { src: "/gallery/2.jpeg", alt: "Community social event" },
         { src: "/gallery/13.jpeg", alt: "Social gathering" },
-        { src: "/gallery/8.jpeg", alt: "Community program" },
-        { src: "/gallery/9.jpg", alt: "Community outreach" },
+        { src: "/gallery/19.jpeg", alt: "Swachh Bharat Abhiyan" },
+        { src: "/gallery/23.jpg", alt: "Swachh Bharat Abhiyan" },
+        { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
       ],
     },
     {
-      title: "Volunteer Groups",
+      title: "Charity & Humanitarian Work",
       images: [
         { src: "/gallery/14.jpeg", alt: "Volunteer team" },
         { src: "/gallery/16.jpeg", alt: "Group of volunteers" },
@@ -25,29 +32,34 @@ export default function Gallery() {
       ],
     },
     {
-      title: "Placement Drives",
+      title: "Skill Development & Employment Drive",
       images: [
         { src: "/gallery/10.jpeg", alt: "Job placement drive" },
         { src: "/gallery/20.jpeg", alt: "" },
         { src: "/gallery/21.jpeg", alt: "" },
+                { src: "/gallery/29.jpeg", alt: "Job placement drive" },
+        { src: "/gallery/30.jpeg", alt: "Job placement drive" },
+        { src: "/gallery/31.jpeg", alt: "Job placement drive" },
+
+
       ],
     },
-    {
-      title: "Charity & Humanitarian Work",
-      images: [
-        { src: "/gallery/15.jpeg", alt: "Charity distribution" },
-        { src: "/gallery/18.jpeg", alt: "" },
-        { src: "/gallery/6.jpg", alt: "" },
-      ],
-    },
-    {
-      title: "Swachh Bharat Abhiyan",
-      images: [
-        { src: "/gallery/19.jpeg", alt: "Swachh Bharat Abhiyan" },
-        { src: "/gallery/23.jpg", alt: "Swachh Bharat Abhiyan" },
-        { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
-      ],
-    },
+    // {
+    //   title: "Charity & Humanitarian Work",
+    //   images: [
+    //     { src: "/gallery/15.jpeg", alt: "Charity distribution" },
+    //     { src: "/gallery/18.jpeg", alt: "" },
+    //     { src: "/gallery/6.jpg", alt: "" },
+    //   ],
+    // },
+    // {
+    //   title: "Swachh Bharat Abhiyan",
+    //   images: [
+    //     { src: "/gallery/19.jpeg", alt: "Swachh Bharat Abhiyan" },
+    //     { src: "/gallery/23.jpg", alt: "Swachh Bharat Abhiyan" },
+    //     { src: "/gallery/22.jpeg", alt: "Swachh Bharat Abhiyan" },
+    //   ],
+    // },
   ];
 
   const [selected, setSelected] = useState(null);

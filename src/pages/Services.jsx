@@ -211,12 +211,12 @@ export default function NGO() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Sainath Educational & Charitable Trust works across sectors — environment, health, disaster relief,
-              education and livelihood — to create resilient communities and sustainable impact in Odisha.
+              Sainath Educational & Charitable Trust works across sectors  environment, health, disaster relief,
+              education and livelihood  to create resilient communities and sustainable impact in Odisha.
             </p>
 
             <p className="text-gray-600">
-              We design programs that are participatory, scalable and aligned to local needs — from tree plantation
+              We design programs that are participatory, scalable and aligned to local needs  from tree plantation
               drives to skill training and emergency relief.
             </p>
           </motion.div>

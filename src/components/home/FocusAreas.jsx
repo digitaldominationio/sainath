@@ -98,7 +98,7 @@ export default function FocusAreas() {
   }, [location]);
 
   return (
-    <section id="focus-areas" className="py-20 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section id="focus-areas" className="py-20 px-6 bg-linear-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-teal-100/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
@@ -148,7 +148,7 @@ export default function FocusAreas() {
               "
             >
               {/* Gradient Overlay on Hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
               {/* Animated Icon */}
               <motion.div
@@ -159,7 +159,7 @@ export default function FocusAreas() {
                 transition={{ duration: 0.5 }}
                 className={`
                   w-16 h-16 flex items-center justify-center rounded-2xl
-                  bg-gradient-to-br ${item.color} text-white text-2xl
+                  bg-linear-to-br ${item.color} text-white text-2xl
                   shadow-lg group-hover:shadow-xl
                   transition-all duration-300
                 `}
@@ -188,7 +188,7 @@ export default function FocusAreas() {
               </div>
 
               {/* Bottom Border Animation */}
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 group-hover:w-full transition-all duration-500"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-linear-to-r from-teal-500 to-cyan-500 group-hover:w-full transition-all duration-500"></div>
             </motion.div>
           ))}
         </motion.div>
@@ -200,7 +200,7 @@ export default function FocusAreas() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 border border-teal-100">
+          <div className="bg-linear-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 border border-teal-100">
             <h3 className="text-2xl font-bold text-gray-900">
               Ready to Make a Difference?
             </h3>

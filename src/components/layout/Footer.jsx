@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-300 pt-20 pb-10  relative overflow-hidden">
       {/* Soft Glow Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-700/10 via-cyan-600/5 to-transparent blur-3xl"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-teal-700/10 via-cyan-600/5 to-transparent blur-3xl"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -130,7 +130,7 @@ export default function Footer() {
 
       {/* Divider Line */}
       <div className="relative mt-12">
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+        <div className="h-px w-full bg-linear-to-r from-transparent via-gray-700 to-transparent"></div>
       </div>
 
       {/* Bottom Text */}
