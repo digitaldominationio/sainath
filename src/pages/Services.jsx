@@ -222,7 +222,7 @@ export default function NGO() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="flex justify-center">
-            <img src="/105.png" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
+            <img src="/1050.png" className="w-full max-w-lg rounded-2xl shadow-lg object-cover" alt="NGO Banner" />
           </motion.div>
         </div>
       </section>
