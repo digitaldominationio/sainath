@@ -60,17 +60,17 @@ export default function Finance() {
 
         {/* Full-width heading + intro */}
         <div className="w-full px-6 lg:px-24">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-teal-700 mb-6">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-teal-700 mb-6 italic">
             Who We Support
           </h2>
 
-          <p className="text-gray-700 text-xl leading-relaxed mb-6 max-w-full">
+          <p className="text-gray-700 text-xl leading-relaxed mb-6 max-w-full italic">
             PrimeLine Finance is committed to supporting individuals, groups, and community-driven
             organisations across Odisha. We focus on strengthening financial access, livelihood
             opportunities, entrepreneurship, and growth for diverse beneficiary groups.
           </p>
 
-          <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-full">
+          <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-full italic">
             Our programmes combine tailored credit linkage, scheme facilitation, technical
             assistance and market access support. We work closely with SHGs, FPOs, MSMEs and
             local youth groups to design sustainable solutions — from business planning and
@@ -281,6 +281,32 @@ Collaborations        </h2>
               <li>✔ Business Associate Opportunities</li>
               <li>✔ Skill Training & Career Growth Programs</li>
             </ul>
+            {/* Partner Logos — 2x2 grid with circular cells */}
+            <div className="mt-6 grid grid-cols-2 gap-6 items-center justify-items-center">
+              <div className="w-full max-w-[180px]">
+                <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
+                  <img src="/adityabirla.png" alt="Aditya Birla" className="w-full h-full object-contain" />
+                </div>
+              </div>
+
+              <div className="w-full max-w-[180px]">
+                <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
+                  <img src="/hdfc.png" alt="HDFC Bank" className="w-full h-full object-contain" />
+                </div>
+              </div>
+
+              <div className="w-full max-w-[180px]">
+                <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
+                  <img src="/idfc.png" alt="IDFC First" className="w-full h-full object-contain" />
+                </div>
+              </div>
+
+              <div className="w-full max-w-[180px]">
+                <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
+                  <img src="/sbi.png" alt="SBI" className="w-full h-full object-contain" />
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
