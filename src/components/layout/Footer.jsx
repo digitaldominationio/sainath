@@ -31,13 +31,17 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-4 mt-5">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61586480465541"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition"
             >
               <Facebook size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/sainath_trust/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white/10 hover:bg-teal-600/30 hover:text-white transition"
             >
               <Instagram size={20} />
