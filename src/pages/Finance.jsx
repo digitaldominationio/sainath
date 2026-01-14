@@ -297,13 +297,13 @@ Collaborations        </h2>
 
               <div className="w-full max-w-[180px]">
                 <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
-                  <img src="/idfc.png" alt="IDFC First" className="w-full h-full object-contain" />
+                  <img src="/23f.jpeg" alt="IDFC First" className="w-full h-full object-contain" />
                 </div>
               </div>
 
               <div className="w-full max-w-[180px]">
                 <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
-                  <img src="/sbi.png" alt="SBI" className="w-full h-full object-contain" />
+                  <img src="/nbf.jpeg" alt="SBI" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
