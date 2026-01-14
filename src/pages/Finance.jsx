@@ -285,7 +285,7 @@ Collaborations        </h2>
             <div className="mt-6 grid grid-cols-2 gap-6 items-center justify-items-center">
               <div className="w-full max-w-[180px]">
                 <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
-                  <img src="/adityabirla.png" alt="Aditya Birla" className="w-full h-full object-contain" />
+                  <img src="/adityabirla.png" alt="Aditya Birla" className="w-[150px] h-full object-contain" />
                 </div>
               </div>
 
@@ -303,7 +303,7 @@ Collaborations        </h2>
 
               <div className="w-full max-w-[180px]">
                 <div className="aspect-square rounded-full bg-white shadow-md overflow-hidden flex items-center justify-center">
-                  <img src="/nbf.jpeg" alt="SBI" className="w-full h-full object-contain" />
+                  <img src="/nbf.jpeg" alt="SBI" className="w-[150px] h-full object-contain" />
                 </div>
               </div>
             </div>
