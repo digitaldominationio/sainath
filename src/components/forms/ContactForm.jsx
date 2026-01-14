@@ -7,19 +7,43 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    console.log("Form Submitted →", formData);
+    try {
+      console.log("📤 Sending data:", formData);
 
-    alert("Thank you! We have received your message.");
+      const response = await fetch("https://at.ddmn.in/webhook/sainath-cnt-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({ name: "", email: "", message: "" });
+      console.log("📊 Response status:", response.status);
+      const responseText = await response.text();
+      console.log("📄 Response body:", responseText);
+
+      if (response.ok) {
+        alert("Thank you! We have received your message.");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error(`Server returned ${response.status}: ${responseText}`);
+      }
+    } catch (error) {
+      console.error("❌ Form submission error:", error);
+      alert("Sorry, there was an error submitting your message. Please check console for details.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -66,7 +90,7 @@ export default function ContactForm() {
         ></textarea>
       </div>
 
-      <Button text="Send Message" />
+      <Button text={isSubmitting ? "Sending..." : "Send Message"} disabled={isSubmitting} />
     </form>
   );
 }
