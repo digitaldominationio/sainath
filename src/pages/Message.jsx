@@ -24,7 +24,7 @@ const Message = () => {
         {/* Text Section */}
         <div className="w-full md:w-2/3">
           <h2 className="text-2xl font-semibold text-gray-900 mb-2">
-            Er. Mihir Ku. Brahma
+            Er. Mihir Kumar Brahma
           </h2>
 
           <p className="text-gray-600 mb-6 leading-relaxed">
