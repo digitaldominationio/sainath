@@ -10,14 +10,14 @@ const Message = () => {
       </h1>
 
       {/* Main Wrapper */}
-      <div className="flex flex-col md:flex-row items-center gap-10 bg-white shadow-md rounded-xl p-6 md:p-10">
+      <div className="flex flex-col md:flex-row items-center gap-10 bg-gray-50 shadow-md rounded-xl p-6 md:p-10">
 
         {/* Image Section */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img
             src={"/about/mihir.jpeg"}
             alt="Chairman"
-            className="w-56 h-56 md:w-64 md:h-64 rounded-xl object-contain shadow-lg"
+            className="w-56 h-56 md:w-64 md:h-64 rounded-xl object-contain "
           />
         </div>
 
