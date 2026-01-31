@@ -229,27 +229,32 @@ export default function NGO() {
 
       {/* SERVICES GRID (overview cards) */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Core Programs</h2>
-        <p className="text-gray-600 max-w-3xl mb-10 leading-relaxed">
+        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-teal-700 mb-6">
+            Our Core Programs
+          </h2>
+        </motion.div>
+        <p className="text-gray-600 max-w-full text-sm md:text-base mb-10 leading-relaxed">
           Below are the main areas where we focus our work. Click or scroll to read more about each program and how we implement impact on the ground.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {SERVICES.map((s) => (
-            <motion.div
-              key={s.key}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all"
-            >
-              <div className="w-14 h-14 rounded-full bg-teal-50 flex items-center justify-center text-2xl font-semibold text-teal-700 mb-4">
-                {s.title.split(" ").slice(0, 2).map(w => w[0]).join("")}
-              </div>
+            <a key={s.key} href={`#${s.key}`} className="block cursor-pointer">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all h-full"
+              >
+                <div className="w-14 h-14 rounded-full bg-teal-50 flex items-center justify-center text-2xl font-semibold text-teal-700 mb-4">
+                  {s.title.split(" ").slice(0, 2).map(w => w[0]).join("")}
+                </div>
 
-              <h3 className="text-xl font-semibold text-gray-900">{s.title}</h3>
-              <p className="text-gray-600 mt-3 text-sm leading-relaxed">{s.short}</p>
-            </motion.div>
+                <h3 className="text-xl font-semibold text-gray-900">{s.title}</h3>
+                <p className="text-gray-600 mt-3 text-sm leading-relaxed">{s.short}</p>
+              </motion.div>
+            </a>
           ))}
         </div>
       </section>
