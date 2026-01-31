@@ -234,9 +234,6 @@ export default function NGO() {
             Our Core Programs
           </h2>
         </motion.div>
-        <p className="text-gray-600 max-w-full text-sm md:text-base mb-10 leading-relaxed">
-          Below are the main areas where we focus our work. Click or scroll to read more about each program and how we implement impact on the ground.
-        </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {SERVICES.map((s) => (
